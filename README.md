@@ -1,5 +1,8 @@
 # Mosaic public data archive
 
+[![DOI](https://zenodo.org/badge/1258271777.svg)](https://doi.org/10.5281/zenodo.20529684)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 This repository is the public knowledge-graph data archive for the
 Mosaic preprint:
 
@@ -10,6 +13,19 @@ It is the artefact the paper's §9 release statement points readers
 at. Headline figures and metrics reported in §5 of the paper
 reproduce from this archive when loaded into a local Postgres +
 Apache AGE instance.
+
+## DOI
+
+- **Concept DOI (always latest version):**
+  [10.5281/zenodo.20529684](https://doi.org/10.5281/zenodo.20529684)
+- **paper-v1 snapshot DOI:**
+  [10.5281/zenodo.20529685](https://doi.org/10.5281/zenodo.20529685)
+
+When citing the dataset that backs the figures and metrics in the
+paper, prefer the paper-v1 snapshot DOI so the citation pins to the
+exact rows the paper reports. When citing the archive generally
+(e.g. in a tool README that should track the latest release), use
+the concept DOI.
 
 ## Releases
 
@@ -60,12 +76,28 @@ retain their upstream licences (see RELEASE.md for the list).
 
 ## Citation
 
+To cite the **dataset** (paper-v1 snapshot):
+
+```bibtex
+@dataset{nyalkalkar2026mosaicdata,
+  author    = {Nyalkalkar, Sourabh},
+  title     = {{Mosaic public knowledge-graph archive (paper-v1)}},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {paper-v1},
+  doi       = {10.5281/zenodo.20529685},
+  url       = {https://doi.org/10.5281/zenodo.20529685}
+}
+```
+
+To cite the **paper** (preprint DOI pending bioRxiv acceptance):
+
 ```bibtex
 @article{nyalkalkar2026mosaic,
   author  = {Nyalkalkar, Sourabh},
   title   = {Mosaic: a knowledge-graph + MCP-tool layer for pre-clinical R\&D intelligence},
   journal = {bioRxiv},
   year    = {2026},
-  doi     = {to-be-assigned}
+  doi     = {pending}
 }
 ```
